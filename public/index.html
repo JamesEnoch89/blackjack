@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html>
-  <head lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Blackjack</title>
-    <link rel="stylesheet" href="/screen.css">
-  </head>
-  <body>
-    <h1>Hello, World!</h1>
-    <script src="/main.js" charset="utf-8"></script>
-  </body>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blackjack</title>
+  <link rel="stylesheet" href="./screen.css">
+</head>
+
+<body>
+  <h1 class="title">Let's Play Blackjack!</h1>
+
+  <section class="game-area">
+
+    <section class="player-area">
+      <h1>Player</h1>
+      <h2>Cards:</h2>
+      <span id="player-cards"></span>
+      <h2>Score:</h2>
+      <span id="player-sum"></span>
+      <h2 id="bust-mesg"></h2>
+    </section>
+
+    <section class="dealer-area">
+      <h1>Dealer</h1>
+      <h2>Cards:</h2>
+      <span id="dealer-cards"></span>
+      <h2>Score:</h2>
+      <span id="dealer-sum"></span>
+      <h2 id="bust-mesg"></h2>
+    </section>
+
+  </section>
+
+  <section class="buttons">
+    <!-- <div id="controls"> -->
+      <button id="hit">Hit Me!</button>
+      <button id="stay">Stay</button>
+    <!-- </div> -->
+  </section>
+
+
+  <script src="./main.js" charset="utf-8"></script>
+</body>
+
 </html>
